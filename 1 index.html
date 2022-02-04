@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body
+        {
+            width: 400px;
+            height: 750px;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background: black;
+            font-size: 80px;
+            padding: 40px;
+        }
+        h2
+        {
+            position: relative;
+            color: black;
+            font-family: serif;
+            font-weight: bold;
+        }
+        h2::before, h2::after
+        {
+            position: absolute;
+            content: attr(data-text);
+            top: 0;
+            left: 1.5%;
+            background: linear-gradient(30deg, red, blue, lime, yellow, cyan, hotpink,blue, white, red, blue, lime, yellow, cyan, hotpink,blue, white, red, blue, lime, yellow, cyan, hotpink,blue, white, red, blue, lime, yellow, cyan, hotpink,blue, white, red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white,red, blue, lime, yellow, cyan, hotpink,blue, white);
+            -webkit-background-clip: text;
+            background-clip: text;
+            z-index: -1;
+            -webkit-text-fill-color: transparent;
+            background-size: 4000%;
+            animation: animat 100s linear infinite;
+        }
+        @keyframes animat
+        {
+            0%
+            {
+                background-position: -50% -0;
+            }
+
+            50%
+            {
+                background-position: -100% -0;
+            }
+
+            100%
+            {
+                background-position: -50% -0;
+            }
+        }
+
+        h2::after
+        {
+            position: absolute;
+            top: 0;
+            left: 3.5%;
+            z-index: -2;
+            background-size: 8000%;
+            animation: animate 200s linear infinite;
+            filter: blur(1px);
+        }
+        @keyframes animate
+        {
+            0%
+            {
+                background-position: 50% 0;
+            }
+
+            50%
+            {
+                background-position: 100% 0;
+            }
+
+            100%
+            {
+                background-position: 50% 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 data-text="HAPPY NEW YEAR 2022">HAPPY NEW YEAR 2022</h2>
+    <h2>
+        Ha;p[nkjhfiuh    iukhf bjh hkynuyuryksftyb ] huybnjhy6biyrueybjoiwep
+        nb hg,kuiyfibwb y9yrw bfikuyfwier
+        bbyjnfiyereoij <html></html>
+    </h2>
+</body>
+</html>
